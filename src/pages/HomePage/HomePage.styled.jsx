@@ -9,6 +9,11 @@ export const HomePageContainer = styled.div`
   @media only screen and (max-width: 795px) {
     padding-left: 80px;
   }
+  @media only screen and (max-width: 620px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
 `;
 
 export const StyledDiv = styled.div`
@@ -95,6 +100,11 @@ export const TextWrapper = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
+  @media only screen and (max-width: 620px) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
 `;
 
 export const SectionContainer = styled.div``;
@@ -128,4 +138,7 @@ export const StyledPhoto = styled.img`
   max-height: 420px;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  @media only screen and (max-width: 620px) {
+    display: none;
+  }
 `;

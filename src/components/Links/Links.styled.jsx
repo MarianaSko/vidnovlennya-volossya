@@ -8,7 +8,7 @@ export const LinksWrapper = styled.div`
   gap: 40px;
   position: fixed;
   left: -12%;
-  top: 54%;
+  top: 49%;
   a {
     color: #0e8c56;
     font-weight: 700;

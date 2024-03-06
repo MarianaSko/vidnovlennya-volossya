@@ -1,4 +1,3 @@
-import React from "react";
 import { Line, LinksWrapper } from "./Links.styled";
 
 const Links = () => {

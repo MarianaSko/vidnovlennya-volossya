@@ -6,7 +6,9 @@ export const Container = styled.div`
     padding: 80px;
     padding-top: 40px;
   }
-  @media only screen and (max-width: 795px) {
+  @media only screen and (max-width: 720px) {
+    padding-top: 120px;
+    padding-bottom: 160px;
   }
 `;
 
@@ -28,6 +30,10 @@ export const Wrapper = styled.div`
   }
   @media only screen and (max-width: 1180px) {
     max-height: 450px;
+  }
+  @media only screen and (max-width: 720px) {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -73,5 +79,16 @@ export const StyledText = styled.p`
   }
   @media only screen and (max-width: 1180px) {
     margin-top: 12px;
+  }
+`;
+
+export const ImagesWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  img {
+    border-radius: 0;
+    max-height: 380px;
   }
 `;

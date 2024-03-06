@@ -10,25 +10,45 @@ import {
 } from "./Layout.styled";
 import logo from "../../images/logo.png";
 import phone from "../../images/phone.svg";
+import menu from "../../images/menu.svg";
 import { FaInstagram } from "react-icons/fa";
 import { LiaFacebookF } from "react-icons/lia";
 import { PiTelegramLogoLight } from "react-icons/pi";
+import { useMediaQuery } from "react-responsive";
+import { useState } from "react";
+import Menu from "../Menu/Menu";
 
 const Layout = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isSmallTablet = useMediaQuery({ query: "(max-width: 560px)" });
   return (
     <div>
       <StyledHeader>
-        <LeftContainer>
-          <NavLink to="/">
-            <Logo src={logo} alt="" />
-          </NavLink>
-          <NavLink to="services">Послуги</NavLink>
-          <NavLink to="contacts">Контакти</NavLink>
-        </LeftContainer>
-        <RightContainer>
-          <img src={phone} alt="" />
-          <a href="tel:+380984053772">+38 098 40 53 772</a>
-        </RightContainer>
+        {!isSmallTablet ? (
+          <>
+            <LeftContainer>
+              <NavLink to="/">
+                <Logo src={logo} alt="" />
+              </NavLink>
+              <NavLink to="services">Послуги</NavLink>
+              <NavLink to="contacts">Контакти</NavLink>
+            </LeftContainer>
+            <RightContainer>
+              <img src={phone} alt="" />
+              <a href="tel:+380984053772">+38 098 40 53 772</a>
+            </RightContainer>
+          </>
+        ) : (
+          <>
+            <NavLink to="/">
+              <Logo src={logo} alt="" />
+            </NavLink>
+            <button type="button" onClick={() => setIsMenuOpen(true)}>
+              <img src={menu} alt="" />
+            </button>
+          </>
+        )}
+        {isMenuOpen && <Menu close={setIsMenuOpen}></Menu>}
       </StyledHeader>
       <Outlet />
       <StyledFooter>

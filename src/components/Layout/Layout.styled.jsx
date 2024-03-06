@@ -24,6 +24,9 @@ export const StyledHeader = styled.header`
   @media only screen and (max-width: 950px) {
     padding: 0 80px;
   }
+  @media only screen and (max-width: 720px) {
+    padding: 0 20px;
+  }
 `;
 
 export const Logo = styled.img`
@@ -79,6 +82,9 @@ export const StyledFooter = styled.div`
   }
   @media only screen and (max-width: 950px) {
     padding: 16px 80px;
+  }
+  @media only screen and (max-width: 720px) {
+    padding: 16px 20px;
   }
 `;
 
