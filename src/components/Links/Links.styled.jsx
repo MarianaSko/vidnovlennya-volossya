@@ -22,6 +22,9 @@ export const LinksWrapper = styled.div`
     position: absolute;
     left: -15%;
   }
+  @media only screen and (max-width: 950px) {
+    left: -20%;
+  }
   @media only screen and (max-width: 795px) {
     display: none;
   }

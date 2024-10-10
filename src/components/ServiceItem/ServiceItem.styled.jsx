@@ -5,15 +5,16 @@ export const PicWrapper = styled.div`
 `;
 
 export const Img = styled.img`
-  height: 600px;
   object-fit: cover;
   margin: 0 auto;
   max-width: 450px;
 `;
 
 export const Section = styled.section`
-  /* margin-top: 100px; */
-  max-width: 600px;
+  width: 600px;
+  @media only screen and (max-width: 620px) {
+    max-width: 400px;
+  }
 `;
 
 export const StyledItem = styled.li`

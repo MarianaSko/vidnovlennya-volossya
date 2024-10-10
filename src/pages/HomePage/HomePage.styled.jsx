@@ -3,12 +3,9 @@ import styled from "styled-components";
 export const HomePageContainer = styled.div`
   padding: 120px 120px;
   @media only screen and (max-width: 950px) {
-    padding-top: 40px;
-    padding-right: 20px;
+    padding: 0;
   }
-  @media only screen and (max-width: 795px) {
-    padding-left: 80px;
-  }
+
   @media only screen and (max-width: 620px) {
     padding-left: 20px;
     padding-right: 20px;
@@ -100,10 +97,24 @@ export const TextWrapper = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
+
   @media only screen and (max-width: 620px) {
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+  }
+`;
+
+export const TabletWrapper = styled.div`
+  @media only screen and (max-width: 950px) {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 60px;
+    padding-left: 100px;
+  }
+  @media only screen and (max-width: 795px) {
+    padding: 20px;
   }
 `;
 
@@ -133,8 +144,6 @@ export const StyledBtn = styled.button`
 `;
 
 export const StyledPhoto = styled.img`
-  margin-top: 40px;
-  margin-right: 60px;
   max-height: 420px;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;

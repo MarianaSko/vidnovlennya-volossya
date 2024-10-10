@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 120px 120px;
+  padding: 60px 120px;
   @media only screen and (max-width: 950px) {
-    padding: 80px;
-    padding-top: 40px;
+    padding: 40px 60px;
   }
-  @media only screen and (max-width: 720px) {
-    padding-top: 120px;
-    padding-bottom: 160px;
+  @media only screen and (max-width: 795px) {
+    padding: 20px;
+  }
+  @media only screen and (max-width: 795px) {
+    /* overflow: hidden; */
   }
 `;
 
@@ -27,9 +28,9 @@ export const Wrapper = styled.div`
     @media only screen and (max-width: 950px) {
       max-height: 435px;
     }
-  }
-  @media only screen and (max-width: 1180px) {
-    max-height: 450px;
+    @media only screen and (max-width: 620px) {
+      box-shadow: none;
+    }
   }
   @media only screen and (max-width: 720px) {
     flex-direction: column;
@@ -38,7 +39,7 @@ export const Wrapper = styled.div`
 `;
 
 export const StyledDiv = styled.div`
-  width: 100vw;
+  width: 100%;
   background-color: #ebf3f5;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   max-width: 600px;
@@ -86,9 +87,10 @@ export const ImagesWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
+  flex-shrink: 1;
   img {
+    flex-grow: 1;
     border-radius: 0;
-    max-height: 380px;
+    max-height: 300px;
   }
 `;
