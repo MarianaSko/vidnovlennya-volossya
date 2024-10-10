@@ -16,7 +16,6 @@ register();
 
 const ServiceItem = ({ obj }) => {
   const { name, descr, price, imgBefore, imgAfter } = obj;
-  console.log(Object.values(imgAfter)[0]);
 
   return (
     <StyledItem>
