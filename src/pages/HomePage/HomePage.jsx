@@ -21,8 +21,6 @@ import { useMediaQuery } from "react-responsive";
 
 const HomePage = () => {
   const navigate = useNavigate();
-  console.log(screen.width);
-
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 950px)" });
 
   return (
