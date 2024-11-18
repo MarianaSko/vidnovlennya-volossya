@@ -1,5 +1,11 @@
 import { NavLink } from "react-router-dom";
-import { Backdrop, LinksWrapper, MenuContainer, Socials } from "./Menu.styled";
+import {
+  Backdrop,
+  LinksWrapper,
+  MenuContainer,
+  PhoneLink,
+  Socials,
+} from "./Menu.styled";
 import { PiTelegramLogoLight } from "react-icons/pi";
 import { FaInstagram } from "react-icons/fa";
 import { LiaFacebookF } from "react-icons/lia";
@@ -19,41 +25,44 @@ const Menu = ({ close }) => {
             Контакти
           </NavLink>
         </LinksWrapper>
-        <Socials>
-          <a
-            href="https://t.me/vidnovlennyavolossya"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <PiTelegramLogoLight
-              color="#1e705c"
-              size={40}
-              cursor="pointer"
-            ></PiTelegramLogoLight>
-          </a>
-          <a
-            href="https://www.instagram.com/vidnovlennyavolossya/?igshid=MzRlODBiNWFlZA%3D%3D"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <FaInstagram
-              color="#1e705c"
-              size={40}
-              cursor="pointer"
-            ></FaInstagram>
-          </a>
-          <a
-            href="https://www.facebook.com/Vidnovlennyavolossya"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <LiaFacebookF
-              color="#1e705c"
-              size={40}
-              cursor="pointer"
-            ></LiaFacebookF>
-          </a>
-        </Socials>
+        <div>
+          <Socials>
+            <a
+              href="https://t.me/vidnovlennyavolossya"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <PiTelegramLogoLight
+                color="#1e705c"
+                size={40}
+                cursor="pointer"
+              ></PiTelegramLogoLight>
+            </a>
+            <a
+              href="https://www.instagram.com/vidnovlennyavolossya/?igshid=MzRlODBiNWFlZA%3D%3D"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FaInstagram
+                color="#1e705c"
+                size={40}
+                cursor="pointer"
+              ></FaInstagram>
+            </a>
+            <a
+              href="https://www.facebook.com/Vidnovlennyavolossya"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <LiaFacebookF
+                color="#1e705c"
+                size={40}
+                cursor="pointer"
+              ></LiaFacebookF>
+            </a>
+          </Socials>
+          <PhoneLink href="tel:+380984053772">+38 098 40 53 772</PhoneLink>
+        </div>
       </MenuContainer>
     </Backdrop>
   );

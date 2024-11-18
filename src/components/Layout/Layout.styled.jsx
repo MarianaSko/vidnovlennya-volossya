@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const LayoutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
+
+export const OutletContainer = styled.div`
+  flex: 1;
+`;
+
 export const StyledHeader = styled.header`
   padding: 0 120px;
   display: flex;
@@ -21,8 +31,9 @@ export const StyledHeader = styled.header`
       color: #f0c2d2;
     }
   }
-  @media only screen and (max-width: 950px) {
-    padding: 0 80px;
+
+  @media only screen and (max-width: 1000px) {
+    padding: 0 28px;
   }
   @media only screen and (max-width: 720px) {
     padding: 0 20px;
@@ -39,9 +50,12 @@ export const LeftContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 80px;
+  @media only screen and (max-width: 720px) {
+    gap: 40px;
+  }
 `;
 
-export const RightContainer = styled.div`
+export const RightContainer = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,22 +89,63 @@ export const StyledFooter = styled.div`
     svg {
       cursor: pointer;
     }
+
+    @media only screen and (max-width: 820px) {
+      font-size: 14px;
+    }
   }
 
   p {
     color: #ebf3f5;
+    @media only screen and (max-width: 820px) {
+      font-size: 14px;
+    }
   }
-  @media only screen and (max-width: 950px) {
-    padding: 16px 80px;
+
+  @media only screen and (max-width: 1080px) {
+    padding: 16px 28px;
   }
   @media only screen and (max-width: 720px) {
     padding: 16px 20px;
+  }
+  @media only screen and (max-width: 520px) {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
 export const SocialMediaWrapper = styled.div`
   display: flex;
   gap: 20px;
+  @media only screen and (max-width: 720px) {
+    gap: 16px;
+  }
+`;
+
+export const AddressWrapper = styled.div`
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  @media only screen and (max-width: 720px) {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: end;
+  }
+  @media only screen and (max-width: 520px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const LinksContainer = styled.div`

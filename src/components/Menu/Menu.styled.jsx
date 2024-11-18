@@ -19,7 +19,7 @@ export const MenuContainer = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-
+  z-index: 3;
   padding: 40px 36px;
   background-color: rgba(240, 194, 210, 0.85);
   backdrop-filter: blur(2px);
@@ -44,4 +44,10 @@ export const Socials = styled.div`
 export const LinksWrapper = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+export const PhoneLink = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 12px;
 `;

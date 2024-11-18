@@ -13,6 +13,8 @@ import education1 from '../../images/services/education1.webp'
 import education2 from '../../images/services/education2.webp'
 import kovtunyBefore from '../../images/services/kovtunyBefore.webp'
 import kovtunyAfter from '../../images/services/kovtunyAfter.webp'
+import reconstr from '../../images/services/reconstr.webp'
+
 
 
 export const servicesList = [{
@@ -80,11 +82,20 @@ export const servicesList = [{
 },
 {
     id: 8,
+    name: 'Реконструкція волосся',
+    price: 2500,
+    descr: 'Реконструкція волосся - це відновлення сильно пошкодженого волосся, а саме зниження ступеню пошкодження та наповнення волосинки вологою. Дана процедура запобігає ламкості волоссю, надає блиск, шовковистісь та мʼякість. Не прибирає пухнастість. Рекомендуємо курсом від 2-5 процедур ',
+    imgAfter: { reconstr },
+    imgBefore: { reconstr },
+},
+{
+    id: 9,
     name: 'Навчання з нуля в нову професію або підвищення кваліфікації',
     price: 5000,
     descr: 'Проводжу індивідуальні та групові  навчання по косметичній трихології, реконструкції та модифікації волосся. Усі процедури, які робимо у нас в студії.',
     imgAfter: { education1 },
     imgBefore: { education2 },
 },
+
 
 ]

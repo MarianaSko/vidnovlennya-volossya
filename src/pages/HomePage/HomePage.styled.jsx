@@ -1,15 +1,12 @@
 import styled from "styled-components";
 
 export const HomePageContainer = styled.div`
-  padding: 120px 120px;
+  padding: 120px;
   @media only screen and (max-width: 950px) {
     padding: 0;
   }
-
-  @media only screen and (max-width: 620px) {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+  @media only screen and (max-width: 540px) {
+    padding: 0;
   }
 `;
 
@@ -60,6 +57,10 @@ export const StyledHeading = styled.h1`
   @media only screen and (max-width: 795px) {
     font-size: 14px;
   }
+  @media only screen and (max-width: 460px) {
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
 `;
 
 export const StyledText = styled.p`
@@ -76,6 +77,15 @@ export const StyledText = styled.p`
   @media only screen and (max-width: 795px) {
     font-size: 28px;
   }
+  @media only screen and (max-width: 620px) {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  @media only screen and (max-width: 460px) {
+    font-size: 24px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
 `;
 
 export const StyledDescription = styled.p`
@@ -83,6 +93,12 @@ export const StyledDescription = styled.p`
   font-size: 19px;
   line-height: 1.7;
   @media only screen and (max-width: 950px) {
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 620px) {
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 460px) {
     font-size: 16px;
   }
 `;
@@ -104,6 +120,11 @@ export const Wrapper = styled.div`
     align-items: center;
     padding-top: 20px;
   }
+  @media only screen and (max-width: 460px) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
 `;
 
 export const TabletWrapper = styled.div`
@@ -112,9 +133,13 @@ export const TabletWrapper = styled.div`
     flex-direction: row;
     padding: 40px 60px;
     padding-left: 100px;
+    gap: 20px;
   }
   @media only screen and (max-width: 795px) {
     padding: 20px;
+  }
+  @media only screen and (max-width: 540px) {
+    gap: 8px;
   }
 `;
 
@@ -141,13 +166,27 @@ export const StyledBtn = styled.button`
   @media only screen and (max-width: 795px) {
     padding: 8px 20px;
   }
+  @media only screen and (max-width: 620px) {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 540px) {
+    margin-top: 8px;
+  }
+  @media only screen and (max-width: 460px) {
+    margin: 0 auto;
+    margin-top: 8px;
+  }
 `;
 
 export const StyledPhoto = styled.img`
-  max-height: 420px;
+  max-height: 320px;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  @media only screen and (max-width: 620px) {
+  @media only screen and (max-width: 540px) {
+    max-height: 280px;
+  }
+  @media only screen and (max-width: 460px) {
     display: none;
   }
 `;
